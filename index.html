@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A quiet place for writing.">
+  <title>Notes</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #171717;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .wrap { width: min(100% - 48px, 720px); margin: 0 auto; }
+    header {
+      padding: 64px 0 42px;
+      border-bottom: 1px solid #e8e8e8;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .site-name { font-size: 36px; font-weight: 700; letter-spacing: -0.035em; }
+    .site-description { margin: 7px 0 0; color: #666; font-size: 15px; }
+    main { padding: 60px 0 80px; }
+    .intro { margin: 0 0 55px; font-size: 24px; line-height: 1.45; letter-spacing: -0.015em; }
+    article { padding: 30px 0; border-top: 1px solid #e8e8e8; }
+    article:first-of-type { border-top: 0; }
+    .date { margin: 0 0 6px; color: #777; font-size: 12px; letter-spacing: .07em; text-transform: uppercase; }
+    h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.2; letter-spacing: -0.025em; }
+    h2 a { color: inherit; text-decoration: none; }
+    h2 a:hover { text-decoration: underline; }
+    .excerpt { margin: 0; color: #4c4c4c; text-align: justify; text-justify: inter-word; }
+    footer { padding: 28px 0 50px; border-top: 1px solid #e8e8e8; color: #777; font-size: 12px; }
+    @media (max-width: 520px) { header { padding-top: 38px; } .wrap { width: min(100% - 32px, 720px); } .intro { font-size: 22px; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div>
+      <div class="site-name">Notes</div>
+      <p class="site-description">A personal space for writing.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section id="posts" aria-label="Recent posts">
+      <article>
+        <p class="date">July 15, 2026</p>
+        <h2><a href="unhurried-morning.html">The value of an unhurried morning</a></h2>
+        <p class="excerpt">Some ideas need a little quiet before they become clear.</p>
+      </article>
+      <article>
+        <p class="date">July 8, 2026</p>
+        <h2><a href="#">Keeping a commonplace book</a></h2>
+        <p class="excerpt">A simple practice for noticing, collecting, and returning to what matters.</p>
+      </article>
+      <article>
+        <p class="date">June 26, 2026</p>
+        <h2><a href="#">A small note on attention</a></h2>
+        <p class="excerpt">Attention is not only what we give; it is also what we make room for.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="wrap" aria-label="Site footer"></footer>
+</body>
+</html>
